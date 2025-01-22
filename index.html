@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>P2A Tracker Calendar</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/tooltip@6.1.8/index.global.min.js"></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>P2A Tracker Calendar</h1>
+        </header>
+        <main>
+            <div style="text-align: center; margin: 20px">
+                <label for="filter">Filter by Status:</label>
+                <select id="filter">
+                    <option value="all">All</option>
+                    <option value="ongoing">Ongoing</option>
+                    <option value="upcoming">Upcoming</option>
+                    <option value="tba">TBA</option>
+                </select>
+            </div>
+            <div style="text-align: center; margin: 20px">
+                <label for="search">Search Games:</label>
+                <input type="text" id="search" placeholder="Type to search..." style="padding: 5px; width: 300px" />
+            </div>
+
+            <div id="calendar"></div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
