@@ -1,22 +1,39 @@
 [
     {
-        "title": "Game 1: Ongoing",
-        "start": "2025-01-20",
-        "end": "2025-01-25",
-        "url": "https://example.com?ref=1234",
+        "title": "Super Champs",
+        "start": "2024-10-18",
+        "url": "https://app.superchamps.com/?r=SnacktimePro",
         "status": "ongoing"
     },
     {
-        "title": "Game 2: Starts Soon",
-        "start": "2025-02-01",
-        "url": "https://example.com?ref=5678",
+        "title": "Castile",
+        "start": "2025-01-17",
+        "url": "https://castile.world/?promote_code=YT9MGD2WJS",
+        "status": "ongoing"
+    },
+    {
+        "title": "Hatchlings",
+        "start": "2025-01-17",
+        "url": "https://hatchlings.revolvinggames.com/",
+        "status": "ongoing"
+    },
+    {
+        "title": "Hello Monster",
+        "start": "2025-02-10",
+        "end": "2025-02-15",
+        "url": "#",
         "status": "upcoming"
     },
     {
-        "title": "Game 3: TBA",
-        "start": "2025-02-10",
-        "end": "2025-02-15",
-        "url": "https://example.com?ref=91011",
-        "status": "tba"
+        "title": "Pirate Nation",
+        "start": "2024-12-10",
+        "url": "https://piratenation.game/signup?code=P-rare-tide-6580",
+        "status": "ongoing"
+    },
+    {
+        "title": "Immortal Rising 2",
+        "start": "2025-01-17",
+        "url": "https://immortalrising2.com/?referral=4_ZUZOvIvy",
+        "status": "ongoing"
     }
 ]

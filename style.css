@@ -3,60 +3,98 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color for dark mode */
 }
 
 header {
-    background-color: #4caf50;
-    color: white;
-    padding: 1em;
+    background-color: #1f1f1f; /* Dark header */
+    color: #ffffff; /* White text on header */
+    padding: 1.2em; /* Slightly more padding for a bigger header */
     text-align: center;
+    border-bottom: 2px solid #333; /* Subtle border for contrast */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Light shadow for depth */
 }
 
+/* Calendar styling */
 #calendar {
-    max-width: 80%;
+    max-width: 90%; /* Increased width for better responsiveness */
     margin: 2em auto;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 1em;
+    background: #1e1e1e; /* Dark background for the calendar */
+    border-radius: 12px; /* Slightly rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+    padding: 1.5em; /* More padding for better content spacing */
+}
+
+/* Current Day Styling */
+.fc-daygrid-day.fc-day-today {
+    background-color: #494949 !important;
+    color: #fff;
+}
+
+/* Ensure that the event container is a flexbox */
+.fc-event.ongoing-event {
+    display: flex;
+    justify-content: space-between; /* Spread title and arrow */
+    align-items: center;
+}
+
+/* Add an arrow to the right end of the event */
+.fc-event.ongoing-event::after {
+    content: '\f061'; /* Font Awesome arrow-right icon */
+    font-family: 'Font Awesome 5 Free'; /* Ensure font family is set for Font Awesome */
+    font-weight: 900; /* Make sure the arrow is the correct weight */
+    font-size: 1.4em;
+    color: red;
+    margin-left: 10px; /* Space between the title and the arrow */
 }
 
 /* Status Colors */
 .fc-event.status-ongoing {
-    background-color: #4caf50 !important; /* Green */
+    background-color: #185180; /* Blue for ongoing */
     color: white !important;
+    border: 2px solid #0a3c56; /* Darker border for contrast */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow for depth */
 }
 
 .fc-event.status-upcoming {
-    background-color: #2196f3 !important; /* Blue */
+    background-color: #ee9929; /* Yellow for upcoming events */
     color: white !important;
+    border: 2px solid #b77b26; /* Darker border to complement the yellow */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow for depth */
 }
 
-.fc-event.status-tba {
-    background-color: #ff9800 !important; /* Orange */
-    color: white !important;
-}
-
-/* Hover Effects for Events */
+/* Hover effect on events */
 .fc-event:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow */
-    z-index: 2; /* Ensure it appears on top */
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth animation */
+    background-color: #902b94; /* Purple on hover */
+    color: white; /* White text on hover */
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+    transition: all 0.3s ease; /* Smooth transition */
 }
 
-/* Highlight border on hover */
-.fc-event:hover::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border: 2px solid rgba(255, 255, 255, 0.8); /* Highlight border */
-    border-radius: 4px; /* Match event's shape */
-    pointer-events: none; /* Ignore mouse events */
+/* Event title text style */
+.fc-event-title {
+    font-weight: bold;
+    font-size: 16px;
+    color: white !important;
+    padding: 5px;
+    border-radius: 4px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Shadow for text contrast */
+    text-align: center;
 }
 
-/* Animation for event entry */
+/* Day grid events */
+.fc-daygrid-event {
+    padding: 12px; /* Adjusted padding for better interactivity */
+    margin: 8px 0; /* Increased spacing between events */
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #333333; /* Dark background for events */
+    color: white !important;
+}
+
+/* Fade-in animation for events */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -70,4 +108,80 @@ header {
 
 .fc-event {
     animation: fadeIn 0.5s ease;
+}
+
+/* Dark mode toolbar */
+.fc-toolbar {
+    background-color: #222222;
+    color: white;
+    overflow: visible;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Dark background for the calendar cells */
+.fc-daygrid-day {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+/* Highlight current day */
+.fc-daygrid-day.fc-day-today {
+    background-color: #333333;
+    color: #fff;
+}
+
+/* More link (view more for events) */
+.fc-more-link {
+    background-color: #444444;
+    color: white !important;
+    padding: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.fc-more-link:hover {
+    background-color: #555555; /* Slightly lighter on hover */
+}
+
+/* Weekday Header Colors */
+.fc-col-header-cell {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.fc-col-header-cell.fc-day-sun {
+    background-color: #e74c3c;
+}
+
+.fc-col-header-cell.fc-day-mon {
+    background-color: #3498db;
+}
+
+.fc-col-header-cell.fc-day-tue {
+    background-color: #2ecc71;
+}
+
+.fc-col-header-cell.fc-day-wed {
+    background-color: #f39c12;
+}
+
+.fc-col-header-cell.fc-day-thu {
+    background-color: #9b59b6;
+}
+
+.fc-col-header-cell.fc-day-fri {
+    background-color: #b19113;
+}
+
+.fc-col-header-cell.fc-day-sat {
+    background-color: #34495e;
+}
+
+/* On hover, change the header's background color */
+.fc-col-header-cell:hover {
+    background-color: #34495e;
+    color: #fff;
 }
