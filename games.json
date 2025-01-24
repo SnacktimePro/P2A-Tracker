@@ -1,0 +1,120 @@
+[
+    {
+        "title": "Super Champs",
+        "start": "2024-10-18",
+        "status": "ongoing",
+        "description": "An animated METAVERSE featuring the world’s premier super athletes",
+        "url": "https://app.superchamps.com/?r=SnacktimePro",
+        "media": "https://pbs.twimg.com/profile_images/1635354900090482695/YWdgH_IY_400x400.jpg",
+        "social_links": [
+            {
+                "platform": "Twitter",
+                "url": "https://x.com/SuperChampsHQ"
+            },
+            {
+                "platform": "Discord",
+                "url": "https://discord.gg/superchamps"
+            },
+            {
+                "platform": "Youtube",
+                "url": "https://www.youtube.com/@superchampkigu"
+            }
+        ]
+    },
+    {
+        "title": "Castile",
+        "start": "2025-01-17",
+        "url": "https://castile.world/?promote_code=YT9MGD2WJS",
+        "status": "ongoing",
+        "social_links": [
+            {
+                "platform": "Twitter",
+                "url": "https://x.com/Castileofficial"
+            },
+            {
+                "platform": "Discord",
+                "url": "https://discord.com/invite/castileofficial"
+            },
+            {
+                "platform": "Youtube",
+                "url": "https://www.youtube.com/@Castileofficial"
+            }
+        ]
+    },
+    {
+        "title": "Hatchlings",
+        "start": "2025-01-17",
+        "url": "https://hatchlings.revolvinggames.com/",
+        "status": "ongoing",
+        "description": "Hatch, nurture, and train your way to become a Hatchings Legend. Built by @Revolving_Games",
+        "social_links": [
+            {
+                "platform": "Twitter",
+                "url": "https://x.com/playhatchlings"
+            },
+            {
+                "platform": "Discord",
+                "url": "https://discord.com/invite/revolvinggames"
+            },
+            {
+                "platform": "Youtube",
+                "url": "https://www.youtube.com/@revolvinggames"
+            }
+        ]
+    },
+    {
+        "title": "Wonder Wars",
+        "start": "2025-02-10",
+        "url": "https://wonderwars.game/wonder-wars-download/",
+        "status": "upcoming",
+        "social_links": [
+            {
+                "platform": "Twitter",
+                "url": "https://x.com/WonderWarsGame"
+            },
+            {
+                "platform": "Discord",
+                "url": "https://discord.com/invite/hellomonstergg"
+            }
+        ]
+    },
+    {
+        "title": "Pirate Nation",
+        "start": "2024-12-10",
+        "end": "2025-3-10",
+        "url": "https://piratenation.game/signup?code=P-rare-tide-6580",
+        "status": "ongoing",
+        "description": "A fully onchain RPG, filled with high seas adventure, treasure, & unexpected surprises",
+        "social_links": [
+            {
+                "platform": "Twitter",
+                "url": "https://x.com/PirateNation"
+            },
+            {
+                "platform": "Discord",
+                "url": "https://discord.com/invite/piratenation"
+            },
+            {
+                "platform": "Medium",
+                "url": " https://piratenation.medium.com/"
+            }
+        ]
+    },
+    {
+        "title": "Immortal Rising 2",
+        "start": "2025-01-17",
+        "url": "https://immortalrising2.com/?referral=4_ZUZOvIvy",
+        "status": "ongoing",
+        "description": "The only dark fantasy idle RPG that has it all",
+        "social_links": [
+            {
+                "platform": "Twitter",
+                "url": "https://x.com/immortalrising2"
+            },
+            {
+                "platform": "Discord",
+                "url": "https://discord.com/invite/immortalrising2"
+            }
+        ]
+    }
+]

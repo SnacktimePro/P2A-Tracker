@@ -3,35 +3,35 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>P2A Tracker Calendar</title>
-        <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+        <title>P2A Tracker</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <header>
-            <h1>P2A Tracker Calendar</h1>
+            <h1>P2A Game Tracker</h1>
+            <p>Track the latest Play-to-Airdrop games</p>
         </header>
-        <main>
-            <div style="text-align: center; margin: 20px">
-                <label for="filter">Filter by Status:</label>
-                <select id="filter">
-                    <option value="all">All</option>
+
+        <div class="container">
+            <div class="filter-section">
+                <input type="text" id="searchInput" placeholder="Search games..." />
+                <select class="filter-select" id="gameFilter">
+                    <option value="all">All Games</option>
                     <option value="ongoing">Ongoing</option>
                     <option value="upcoming">Upcoming</option>
+                    <option value="ended">Ended</option>
                 </select>
             </div>
-            <div style="text-align: center; margin: 20px">
-                <label for="search">Search Games:</label>
-                <input type="text" id="search" placeholder="Type to search..." style="padding: 5px; width: 300px" />
-            </div>
 
-            <div id="calendar"></div>
-        </main>
+            <main id="gameList">
+                <!-- Games will be dynamically populated here -->
+            </main>
+        </div>
 
         <!-- Your Custom JavaScript -->
-        <script src="script.js"></script>
+        <script type="module" src="core/main.js"></script>
     </body>
 </html>
