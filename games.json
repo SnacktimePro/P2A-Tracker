@@ -116,5 +116,31 @@
                 "url": "https://discord.com/invite/immortalrising2"
             }
         ]
+    },
+    {
+        "title": "Andrometa",
+        "start": "2025-01-07",
+        "end": "2025-02-10",
+        "url": "https://www.andrometa.gg/?referrer=snacktimepro",
+        "status": "ongoing",
+        "description": "Andrometa redefines gaming by bringing together interactive experiences like SWRMS, creative tools like AniMee, and a marketplace for digital assets. Players can customize avatars, craft powerful gear, and compete in high-stakes challenges while progressing through interconnected games.",
+        "social_links": [
+            {
+                "platform": "Twitter",
+                "url": "https://x.com/TheAndrometa"
+            },
+            {
+                "platform": "Discord",
+                "url": "https://discord.com/invite/andrometa"
+            },
+            {
+                "platform": "Youtube",
+                "url": "https://www.youtube.com/@AndrometaGG/featured"
+            },
+            {
+                "platform": "Medium",
+                "url": " https://andrometahub.medium.com/"
+            }
+        ]
     }
 ]
