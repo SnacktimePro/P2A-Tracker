@@ -38,8 +38,16 @@ export class GameRenderer {
                 </span>
                 <p class="description">${game.description || 'No description available.'}</p>
                 <div class="date-info">
-                    <span>Start: ${formatDate(game.start)}</span>
-                    <span>End: ${formatDate(game.end)}</span>
+                    <div class="date-container">
+                        <span class="date-icon"><i class="fas fa-calendar-day"></i></span> <!-- Start Date Icon -->
+                        <span class="date-label">Start:</span>
+                        <span class="date-value start">${formatDate(game.start)}</span>
+                    </div>
+                    <div class="date-container">
+                        <span class="date-icon"><i class="fas fa-calendar-check"></i></span> <!-- End Date Icon -->
+                        <span class="date-label">End:</span>
+                        <span class="date-value end">${formatDate(game.end)}</span> <!-- TBA Example -->
+                    </div>
                 </div>
             `;
 

@@ -7,6 +7,11 @@
     --muted-text-color: #ccc;
     --border-radius: 8px;
     --transition-speed: 0.3s;
+
+    /* Date related colors */
+    --start-date-color: #32cd32; /* Lime green for end date - fresh and natural */
+    --end-date-color: #ff7f50; /* Coral for start date - warm and attention-grabbing */
+    --tba-color: #ff6347; /* Tomato red for TBA - soft but noticeable */
 }
 
 /* Base Styles */
@@ -191,13 +196,51 @@ header p {
 
 /* Date Info */
 .date-info {
-    font-size: 0.95rem;
-    color: var(--text-color); /* Changed to white */
     margin-top: 1rem;
+    font-size: 1rem;
+    color: var(--text-color); /* Text color from your variables */
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center the items horizontally */
     gap: 1rem;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    width: 100%; /* Ensure it takes full width of the card */
+    justify-content: space-evenly; /* Distribute items evenly */
+    align-items: center; /* Vertically align items */
+}
+
+.date-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Ensure content inside date-container is centered */
+}
+
+.date-label {
+    font-weight: bold;
+    margin-right: 0.5rem;
+    color: var(--text-color); /* Label uses text color */
+}
+
+.date-value {
+    font-weight: bold; /* Make the date more prominent */
+}
+
+.date-value.start {
+    color: var(--start-date-color); /* Use coral for the start date */
+}
+
+.date-value.end {
+    color: var(--end-date-color); /* Use lime green for the end date */
+}
+
+.date-value.tba {
+    color: var(--tba-color); /* Use tomato red for TBA */
+    font-style: italic; /* TBA should stand out with italics */
+}
+
+/* Optional icons for dates */
+.date-icon {
+    margin-right: 0.5rem;
+    color: var(--muted-text-color);
 }
 
 /* Buttons */
