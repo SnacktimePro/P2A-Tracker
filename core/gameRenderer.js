@@ -52,24 +52,24 @@ export class GameRenderer {
             `;
 
             // Add buttons if URLs are present
-            const buttons = [];
-            if (game.url || game.claim_url) {
-                buttons.push({
-                    text: game.status === 'ended' ? 'Claim Airdrop' : 'Play Now',
-                    classes: ['btn', `${game.status === 'ended' ? 'btn-secondary' : 'btn-primary'}`],
-                    url: game.claim_url || game.url,
-                });
+            let buttonText = 'Play Now';
+            let buttonClass = 'btn btn-primary';
+            let buttonURL = game.url;
+
+            //Show when status is ended and their is a claim url
+            if (game.claim_url && game.status === 'ended') {
+                buttonText = 'Claim Airdrop';
+                buttonClass = 'btn btn-secondary';
+                buttonURL = game.claim_url;
             }
 
-            if (buttons.length > 0) {
-                const buttonsHTML = buttons
-                    .map(
-                        (button) => `
-                            <a href="${button.url}" class="${button.classes.join(' ')}">${button.text}</a>
-                        `
-                    )
-                    .join('');
-                gameHTML += `<div class="button-container">${buttonsHTML}</div>`;
+            // Generate button HTML if a URL exists
+            if (buttonURL) {
+                gameHTML += `
+                    <div class="button-container">
+                        <a href="${buttonURL}" class="${buttonClass}" target="_blank" rel="noopener noreferrer">${buttonText}</a>
+                    </div>
+                `;
             }
 
             if (game.social_links) {
