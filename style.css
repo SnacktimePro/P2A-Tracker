@@ -105,7 +105,7 @@ header p {
     justify-content: space-between;
     min-height: 400px; /* Ensures card height is maintained */
     height: 100%; /* Ensures it takes up the full height of its grid cell */
-    width: 350px; /* Fixed width for all game cards */
+    width: 400px; /* Fixed width for all game cards */
     max-width: 100%; /* Ensure it's responsive */
 }
 

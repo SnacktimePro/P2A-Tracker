@@ -8,6 +8,14 @@ export class GameRenderer {
     renderGames(games) {
         this.container.innerHTML = ''; // Clear previous content
 
+        // Cache the current date to avoid creating multiple Date objects
+        const now = new Date();
+
+        // Update each game's status based on the dates
+        games.forEach((game) => {
+            game.status = this.updateGameStatus(game, now);
+        });
+
         // Sort the games array to prioritize ongoing games
         games.sort((a, b) => {
             if (a.status === 'ongoing' && b.status !== 'ongoing') return -1; // Ongoing first
@@ -56,7 +64,7 @@ export class GameRenderer {
             let buttonClass = 'btn btn-primary';
             let buttonURL = game.url;
 
-            //Show when status is ended and their is a claim url
+            // Show when status is ended and there is a claim url
             if (game.claim_url && game.status === 'ended') {
                 buttonText = 'Claim Airdrop';
                 buttonClass = 'btn btn-secondary';
@@ -105,6 +113,20 @@ export class GameRenderer {
 
             this.container.appendChild(gameCard);
         });
+    }
+
+    updateGameStatus(game, now) {
+        const startDate = new Date(game.start);
+        const endDate = game.end ? new Date(game.end) : null;
+
+        switch (true) {
+            case now < startDate:
+                return 'upcoming';
+            case endDate && now > endDate:
+                return 'ended';
+            default:
+                return 'ongoing';
+        }
     }
 
     getStatusBadge(status) {

@@ -1,6 +1,6 @@
 export function formatDate(date) {
     if (!date) return 'TBA'; // Return 'TBA' if the date is not provided
-    const options = { year: 'numeric', month: 'long', day: 'numeric' }; // Full date format
+    const options = { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }; // Full date format
     return new Date(date).toLocaleDateString('en-US', options);
 }
 

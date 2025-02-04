@@ -146,8 +146,30 @@
         ]
     },
     {
+        "title": "Kuroro Wilds",
+        "start": "2025-02-05",
+        "url": "https://hub.kuroro.com/",
+        "status": "ongoing",
+        "description": "A retro-inspired action-combat-based monster collecting RPG",
+        "social_links": [
+            {
+                "platform": "Twitter",
+                "url": "https://x.com/KuroroWilds"
+            },
+            {
+                "platform": "Discord",
+                "url": "https://discord.com/invite/kurorobeasts"
+            },
+            {
+                "platform": "Tiktok",
+                "url": "https://www.tiktok.com/@kurorobeasts"
+            }
+        ]
+    },
+    {
         "title": "Variance",
         "start": "2025-01-24",
+        "end": "2025-01-31",
         "url": "https://www.playvariance.com/en/play",
         "status": "ended",
         "description": "A F2P Action Roguelite/Metroidvania. Need a key to play right now. Win one in their discord",
