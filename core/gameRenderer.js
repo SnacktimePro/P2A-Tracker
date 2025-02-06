@@ -16,11 +16,14 @@ export class GameRenderer {
             game.status = this.updateGameStatus(game, now);
         });
 
-        // Sort the games array to prioritize ongoing games
+        const statusOrder = Object.freeze({
+            ongoing: 0,
+            upcoming: 1,
+            ended: 2,
+        });
+
         games.sort((a, b) => {
-            if (a.status === 'ongoing' && b.status !== 'ongoing') return -1; // Ongoing first
-            if (a.status !== 'ongoing' && b.status === 'ongoing') return 1;
-            return 0; // Keep the rest as is
+            return statusOrder[a.status] - statusOrder[b.status];
         });
 
         games.forEach((game) => {
