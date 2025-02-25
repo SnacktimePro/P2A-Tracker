@@ -5,7 +5,7 @@
         "status": "ongoing",
         "description": "An animated METAVERSE featuring the world’s premier super athletes",
         "url": "https://app.superchamps.com/?r=SnacktimePro",
-        "media": "https://pbs.twimg.com/profile_images/1635354900090482695/YWdgH_IY_400x400.jpg",
+        "media": "https://pbs.twimg.com/profile_banners/1617360115882942465/1678733967/1500x500",
         "social_links": [
             {
                 "platform": "Twitter",
@@ -28,6 +28,7 @@
         "status": "ongoing",
         "description": "Idle RPG game set in a Fantasy Cthulhu universe",
         "url": "https://castile.world/?promote_code=YT9MGD2WJS",
+        "media": "https://pbs.twimg.com/profile_banners/1675694366776791041/1698849815/1500x500",
         "social_links": [
             {
                 "platform": "Twitter",
@@ -47,9 +48,10 @@
         "title": "Hatchlings",
         "start": "2025-01-17",
         "end": "2025-02-06",
-        "url": "https://hatchlings.revolvinggames.com/",
         "status": "ongoing",
         "description": "Hatch, nurture, and train your way to become a Hatchings Legend. Built by @Revolving_Games",
+        "media": "https://pbs.twimg.com/profile_banners/1851681305735630848/1730376423/1500x500",
+        "url": "https://hatchlings.revolvinggames.com/",
         "social_links": [
             {
                 "platform": "Twitter",
@@ -67,8 +69,11 @@
     },
     {
         "title": "Wonder Wars",
-        "url": "https://wonderwars.game/wonder-wars-download/",
+        "start": "2025-02-27",
         "status": "upcoming",
+        "description": "Wonder Wars is a strategic, multiplayer battle game where players collect and upgrade heroes and troops to build powerful teams. With over 40 unique characters, players can create multiple decks to compete in PvP ranked battles or tackle PvE challenges like dungeons and the endless Dark Tower mode",
+        "media": "https://pbs.twimg.com/profile_images/1704052112823390208/xB4hmVYk_400x400.jpg",
+        "url": "https://wonderwars.game/wonder-wars-download/",
         "social_links": [
             {
                 "platform": "Twitter",
@@ -84,9 +89,10 @@
         "title": "Pirate Nation",
         "start": "2024-12-10",
         "end": "2025-3-15",
-        "url": "https://piratenation.game/signup?code=P-rare-tide-6580",
         "status": "ongoing",
         "description": "A fully onchain RPG, filled with high seas adventure, treasure, & unexpected surprises",
+        "url": "https://piratenation.game/signup?code=P-rare-tide-6580",
+        "media": "https://pbs.twimg.com/profile_banners/1483482918764826628/1712848958/1500x500",
         "social_links": [
             {
                 "platform": "Twitter",
@@ -106,9 +112,10 @@
         "title": "Immortal Rising 2",
         "start": "2025-01-17",
         "end": "2025-02-11",
-        "url": "https://immortalrising2.com/?referral=4_ZUZOvIvy",
         "status": "ongoing",
         "description": "The only dark fantasy idle RPG that has it all",
+        "url": "https://immortalrising2.com/?referral=4_ZUZOvIvy",
+        "media": "https://pbs.twimg.com/profile_banners/1752251826886553600/1726207295/1500x500",
         "social_links": [
             {
                 "platform": "Twitter",
@@ -124,9 +131,10 @@
         "title": "Andrometa",
         "start": "2025-01-07",
         "end": "2025-02-10",
-        "url": "https://www.andrometa.gg/?referrer=snacktimepro",
         "status": "ongoing",
         "description": "Dash and Slash for your share of 2,500,000 Seek Honor Reach Destiny Tokens aka $SHRD Token!",
+        "url": "https://www.andrometa.gg/?referrer=snacktimepro",
+        "media": "https://pbs.twimg.com/profile_images/1753993466772619264/meaCitpA_400x400.jpg",
         "social_links": [
             {
                 "platform": "Twitter",
@@ -150,9 +158,10 @@
         "title": "Kuroro Wilds",
         "start": "2025-02-05",
         "end": "2025-02-19",
-        "url": "https://hub.kuroro.com/?referral=95VZQLBB",
         "status": "ongoing",
         "description": "A retro-inspired action-combat-based monster collecting RPG",
+        "url": "https://hub.kuroro.com/?referral=95VZQLBB",
+        "media": "https://pbs.twimg.com/profile_banners/1691858355168464904/1708984489/1500x500",
         "social_links": [
             {
                 "platform": "Twitter",
@@ -172,9 +181,10 @@
         "title": "Variance",
         "start": "2025-01-24",
         "end": "2025-01-31",
-        "url": "https://www.playvariance.com/en/play",
         "status": "ended",
         "description": "A F2P Action Roguelite/Metroidvania. Need a key to play right now. Win one in their discord",
+        "url": "https://www.playvariance.com/en/play",
+        "media": "https://pbs.twimg.com/profile_banners/1777367417246961664/1731944636/1500x500",
         "social_links": [
             {
                 "platform": "Twitter",

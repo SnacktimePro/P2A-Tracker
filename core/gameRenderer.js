@@ -33,7 +33,7 @@ export class GameRenderer {
         gameCard.className = 'game-card';
 
         const twitterLink = game.social_links?.find((link) => link.platform.toLowerCase() === 'twitter')?.url;
-        const media = twitterLink ? getTwitterProfileImage(twitterLink) : null;
+        const media = game.media || (twitterLink ? getTwitterProfileImage(twitterLink) : null);
 
         gameCard.innerHTML = `
             ${this.generateMediaHTML(media)}
@@ -51,7 +51,7 @@ export class GameRenderer {
         return media
             ? `
             <div class="media-container">
-                <div class="image-placeholder">
+                <div class="image-placeholder data-fullscreen-image="${media}">
                     <i class="fas fa-spinner fa-spin"></i>
                 </div>
             </div>`
@@ -125,6 +125,8 @@ export class GameRenderer {
         img.onload = () => {
             const placeholder = gameCard.querySelector('.image-placeholder');
             placeholder?.replaceWith(img);
+
+            img.addEventListener('click', () => this.showFullscreenImage(media, title));
         };
 
         img.onerror = () => {
@@ -164,5 +166,54 @@ export class GameRenderer {
             default:
                 return 'Unknown';
         }
+    }
+
+    showFullscreenImage(imageSrc, title) {
+        // Create modal if it doesn't exist
+        let modal = document.getElementById('image-modal');
+
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.id = 'image-modal';
+            modal.className = 'fullscreen-modal';
+            modal.innerHTML = `
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <img id="fullscreen-img">
+                    <div class="image-title"></div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+
+            // Add event listener to close button
+            modal.querySelector('.close-modal').addEventListener('click', () => {
+                modal.style.display = 'none';
+            });
+
+            // Close when clicking outside the image
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+
+            // Close on ESC key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && modal.style.display === 'block') {
+                    modal.style.display = 'none';
+                }
+            });
+        }
+
+        // Set the image source and title
+        const modalImg = modal.querySelector('#fullscreen-img');
+        modalImg.src = imageSrc;
+        modalImg.alt = title || '';
+
+        const titleElement = modal.querySelector('.image-title');
+        titleElement.textContent = title || '';
+
+        // Show the modal
+        modal.style.display = 'block';
     }
 }

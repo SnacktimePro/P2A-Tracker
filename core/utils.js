@@ -10,7 +10,7 @@ export function getTwitterProfileImage(twitterUrl) {
     const usernameMatch = twitterUrl?.match(/x\.com\/([a-zA-Z0-9_]+)/);
     if (usernameMatch && usernameMatch[1]) {
         const username = usernameMatch[1];
-        return `https://unavatar.io/twitter/${username}`;
+        return `https://unavatar.io/x/${username}`;
     }
     return null;
 }
