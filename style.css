@@ -238,6 +238,7 @@ header p {
 
 .date-value {
     font-weight: bold; /* Make the date more prominent */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .date-value.start {

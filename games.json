@@ -218,5 +218,31 @@
                 "url": "https://www.youtube.com/@StellarForger"
             }
         ]
+    },
+    {
+        "title": "Nyan Heroes",
+        "start": "2025-03-26",
+        "status": "upcoming",
+        "description": "Hero-shooter where cats pilot GIANT mechs🐱🤖 Creators of Halo/Destiny. Pre-Alpha Playtest 4 is coming on March 26! The Battledome will be open, and the competition is set to be fiercer than ever. Referral code: SnacktimeGod",
+        "media": "https://pbs.twimg.com/profile_banners/1422280869788622848/1739538303/1500x500",
+        "url": "https://missions.nyanheroes.com/missions?code=SnacktimeGod",
+        "social_links": [
+            {
+                "platform": "Twitter",
+                "url": "https://x.com/nyanheroes"
+            },
+            {
+                "platform": "Discord",
+                "url": "https://discord.com/invite/nyanheroesgame"
+            },
+            {
+                "platform": "Youtube",
+                "url": "https://www.youtube.com/channel/UCjL9JLuurNx4p6o8sttWwDA"
+            },
+            {
+                "platform": "Tiktok",
+                "url": " https://www.tiktok.com/@nyanheroesgame"
+            }
+        ]
     }
 ]
