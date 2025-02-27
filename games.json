@@ -179,10 +179,10 @@
     },
     {
         "title": "Variance",
-        "start": "2025-01-24",
-        "end": "2025-01-31",
+        "start": "2025-02-24",
+        "end": "2025-03-02",
         "status": "ended",
-        "description": "A F2P Action Roguelite/Metroidvania. Need a key to play right now. Win one in their discord",
+        "description": "10,000 MAGIC up for grabs on the leaderboard; alpha lootbot for playing and completing tasks; from lootbox you will earn talismans; it will end in 7 days",
         "url": "https://www.playvariance.com/en/play",
         "media": "https://pbs.twimg.com/profile_banners/1777367417246961664/1731944636/1500x500",
         "social_links": [
@@ -193,6 +193,29 @@
             {
                 "platform": "Discord",
                 "url": "https://discord.com/invite/playvariance"
+            }
+        ]
+    },
+    {
+        "title": "Stellar Forger",
+        "start": "2025-02-12",
+        "end": "2025-03-12",
+        "status": "ongoing",
+        "description": "The first AAA Roguelite Adventure Game where the fate of the universe lies in the hands of Master Forgers ☄️. Climb the leaderboard to claim 🎁 your share of 50M $MEDAL tokens and $20K in $A8 rewards.",
+        "media": "https://pbs.twimg.com/profile_banners/1814330679272116224/1724335564/1500x500",
+        "url": "https://stellarforger.io?ref=RD6PjG",
+        "social_links": [
+            {
+                "platform": "Twitter",
+                "url": "https://x.com/StellarForger"
+            },
+            {
+                "platform": "Discord",
+                "url": "https://discord.com/invite/stellarforger"
+            },
+            {
+                "platform": "Youtube",
+                "url": "https://www.youtube.com/@StellarForger"
             }
         ]
     }
