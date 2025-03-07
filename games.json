@@ -70,6 +70,7 @@
     {
         "title": "Wonder Wars",
         "start": "2025-02-27",
+        "end": "2025-03-06",
         "status": "upcoming",
         "description": "Wonder Wars is a strategic, multiplayer battle game where players collect and upgrade heroes and troops to build powerful teams. With over 40 unique characters, players can create multiple decks to compete in PvP ranked battles or tackle PvE challenges like dungeons and the endless Dark Tower mode",
         "media": "https://pbs.twimg.com/profile_images/1704052112823390208/xB4hmVYk_400x400.jpg",
@@ -155,9 +156,8 @@
         ]
     },
     {
-        "title": "Kuroro Wilds",
-        "start": "2025-02-05",
-        "end": "2025-02-19",
+        "title": "Kuroro Wilds (Season 2)",
+        "start": "2025-03-17",
         "status": "ongoing",
         "description": "A retro-inspired action-combat-based monster collecting RPG",
         "url": "https://hub.kuroro.com/?referral=95VZQLBB",
@@ -225,7 +225,7 @@
         "end": "2025-04-13",
         "status": "upcoming",
         "description": "Hero-shooter where cats pilot GIANT mechs🐱🤖 Creators of Halo/Destiny. Pre-Alpha Playtest 4 is coming on March 26! The Battledome will be open, and the competition is set to be fiercer than ever. Referral code: SnacktimeGod",
-        "media": "https://pbs.twimg.com/ext_tw_video_thumb/1895100214295351296/pu/img/GX980bPnT8ORt5oU.jpg",
+        "media": "https://pbs.twimg.com/amplify_video_thumb/1897639121843331072/img/__17BySFTcEK-trs.jpg",
         "url": "https://missions.nyanheroes.com/missions?code=SnacktimeGod",
         "social_links": [
             {
@@ -243,6 +243,25 @@
             {
                 "platform": "Tiktok",
                 "url": " https://www.tiktok.com/@nyanheroesgame"
+            }
+        ]
+    },
+    {
+        "title": "Swords of Blood",
+        "start": "2024-12-15",
+        "end": "TBA",
+        "status": "ongoing",
+        "description": "Unleash your fury in Swords of Blood, a high-speed, hack-and-slash RPG where razor-sharp combat, stunning visuals, and an epic narrative collide",
+        "media": "https://i3.ytimg.com/vi/TazaDM80Tb8/maxresdefault.jpg",
+        "url": "https://store.hyperplay.xyz/game/swordsofblood",
+        "social_links": [
+            {
+                "platform": "Twitter",
+                "url": "https://x.com/SwordsofBlood_"
+            },
+            {
+                "platform": "Discord",
+                "url": "https://discord.com/invite/swordsofblood2025"
             }
         ]
     }
